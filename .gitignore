@@ -1,0 +1,12 @@
+# Git Ignore file
+launch.json
+
+# No html
+*.html
+
+# No mac files
+.DS_Store
+
+# No npm runtime artifacts
+node_modules/*
+package-lock.json
