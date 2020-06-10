@@ -10,3 +10,4 @@ launch.json
 # No npm runtime artifacts
 node_modules/*
 package-lock.json
+packages/*

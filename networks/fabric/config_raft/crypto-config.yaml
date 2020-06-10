@@ -15,22 +15,22 @@
 
 OrdererOrgs:
 - Name: Orderer
-  Domain: example.com
+  Domain: avantas.com
 
   Template:
-      Count: 3
+      Count: 5
 
 PeerOrgs:
 - Name: Org1
-  Domain: org1.example.com
+  Domain: org1.avantas.com
   Template:
-      Count: 1
+      Count: 2
   Users:
       Count: 1
 
 - Name: Org2
-  Domain: org2.example.com
+  Domain: org2.avantas.com
   Template:
-      Count: 1
+      Count: 2
   Users:
       Count: 1

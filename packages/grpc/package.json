@@ -1,28 +1,28 @@
 {
-  "_from": "grpc@1.20.2",
-  "_id": "grpc@1.20.2",
+  "_from": "grpc@1.24.2",
+  "_id": "grpc@1.24.2",
   "_inBundle": false,
-  "_integrity": "sha512-sJS1Ri8bxwh2F1IUwJ2c2w5SKY6/cleWuheO8gIvlUbJAtUWZEATVF+QCR4fgNnQWnYWPXm7oEeNoxh/93u9cg==",
-  "_location": "/grpc",
+  "_integrity": "sha512-EG3WH6AWMVvAiV15d+lr+K77HJ/KV/3FvMpjKjulXHbTwgDZkhkcWbwhxFAoTdxTkQvy0WFcO3Nog50QBbHZWw==",
+  "_location": "/fabric-network/grpc",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "grpc@1.20.2",
+    "raw": "grpc@1.24.2",
     "name": "grpc",
     "escapedName": "grpc",
-    "rawSpec": "1.20.2",
+    "rawSpec": "1.24.2",
     "saveSpec": null,
-    "fetchSpec": "1.20.2"
+    "fetchSpec": "1.24.2"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "/fabric-network/fabric-ca-client",
+    "/fabric-network/fabric-client"
   ],
-  "_resolved": "https://registry.npmjs.org/grpc/-/grpc-1.20.2.tgz",
-  "_shasum": "be94dcce68f4756170ff19db5faaaa7d0587d2b2",
-  "_spec": "grpc@1.20.2",
-  "_where": "/Users/einnity/gowork/src/github_fabric_app/_fabcar-nodejs-rel-1_2",
+  "_resolved": "https://registry.npmjs.org/grpc/-/grpc-1.24.2.tgz",
+  "_shasum": "76d047bfa7b05b607cbbe3abb99065dcefe0c099",
+  "_spec": "grpc@1.24.2",
+  "_where": "/Users/einnity/gowork/src/githubfabric_v2.com/Hyperledger-caliper-benchmarks-v0_3_0/node_modules/fabric-network/node_modules/fabric-ca-client",
   "author": {
     "name": "Google Inc."
   },
@@ -46,10 +46,11 @@
     }
   ],
   "dependencies": {
+    "@types/bytebuffer": "^5.0.40",
     "lodash.camelcase": "^4.3.0",
     "lodash.clone": "^4.5.0",
     "nan": "^2.13.2",
-    "node-pre-gyp": "^0.13.0",
+    "node-pre-gyp": "^0.14.0",
     "protobufjs": "^5.0.3"
   },
   "deprecated": false,
@@ -82,13 +83,16 @@
     "deps/grpc/include/grpc/**/*.h",
     "deps/grpc/src/core/**/*.{c,cc,h}",
     "deps/grpc/src/boringssl/err_data.c",
-    "deps/grpc/third_party/nanopb/*.{c,cc,h}",
-    "deps/grpc/third_party/zlib/**/*.{c,cc,h}",
+    "deps/grpc/third_party/abseil-cpp/absl/**/*.{h,hh,inc}",
     "deps/grpc/third_party/boringssl/crypto/**/*.{c,cc,h}",
     "deps/grpc/third_party/boringssl/include/**/*.{c,cc,h}",
     "deps/grpc/third_party/boringssl/ssl/**/*.{c,cc,h}",
     "deps/grpc/third_party/boringssl/third_party/**/*.{c,h}",
-    "deps/grpc/third_party/abseil-cpp/absl/**/*.{h,hh}",
+    "deps/grpc/third_party/nanopb/*.{c,cc,h}",
+    "deps/grpc/third_party/upb/**/*.{c,h,inc}",
+    "deps/grpc/third_party/zlib/**/*.{c,cc,h}",
+    "deps/grpc/third_party/address_sorting/**/*.{c,h}",
+    "deps/grpc/third_party/cares/**/*.{c,h}",
     "binding.gyp"
   ],
   "homepage": "https://grpc.io/",
@@ -127,5 +131,5 @@
     "prepack": "git submodule update --init --recursive && npm install"
   },
   "typings": "index.d.ts",
-  "version": "1.20.2"
+  "version": "1.24.2"
 }
